@@ -66,9 +66,9 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 # b/189477034: Bypass build time check on uses_libs until vendor fixes all their apps
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
-# Inherit some common PixelOS stuff.
+# Inherit some common SuperiorOS stuff.
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/superior/config/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/redbull/lineage_common.mk)
@@ -78,7 +78,7 @@ include device/google/redfin/device-lineage.mk
 # Device identifier. This must come after all inclusions
 PRODUCT_MANUFACTURER := Google
 PRODUCT_BRAND := google
-PRODUCT_NAME := aosp_redfin
+PRODUCT_NAME := superior_redfin
 PRODUCT_DEVICE := redfin
 PRODUCT_MODEL := Pixel 5
 
